@@ -171,4 +171,29 @@ n("c4").s("sawtooth")
 s("cp*4").delay(0.5)
   .delaytime(1/8)
   .delayfeedback(slider(0.5, 0, 0.95, 0.01))
-  .room(0.3) 
+  .room(0.3)
+
+// --- MORE PATTERN TRANSFORMATIONS & TECHNIQUES ---
+
+// `.struct()` can also use 'x' for an event and '~' for a rest.
+// This plays on the second and fourth beats.
+s("bd*4").struct("~ x ~ x")
+
+// `.mask()` filters a pattern based on a boolean pattern of 1s and 0s.
+// '1' lets the event through, '0' silences it. Useful for rhythmic filtering.
+s("bd*8").mask("<1 0 1 0 1 0 1 1>")
+
+// `.jux()` (juxtapose) applies a function to every other event.
+// This reverses every other sample. A common use is `jux(rev)`.
+s("bd sd hh cp").jux(rev)
+
+// `.fast()` is the opposite of `.slow()`. `fast(2)` doubles the speed.
+s("bd sd").fast(2)
+
+// Most parameters can be patterned themselves! This is a very powerful feature.
+// This will alternate the speed of the sample between 0.5 and 2.
+s("bd*8").speed("0.5 2")
+
+// You can combine these ideas inside an arrow function for complex results.
+// Every 3 cycles, the speed will alternate and the pattern will be juxtapose-reversed.
+s("bd*4").every(3, x => x.speed("0.5 2").jux(rev)) 
