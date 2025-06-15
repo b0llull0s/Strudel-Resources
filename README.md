@@ -106,14 +106,13 @@ Functions related to playing synthesizers and notes.
 
 ---
 
-## Keyboard Shortcuts (in the REPL)
+## Keyboard Shortcuts (for Linux)
 
-These are the default shortcuts for controlling the Strudel REPL. "Evaluate" means to run the code.
+These are the most common shortcuts for the Strudel REPL on a Linux system.
 
 | Shortcut | Action | Description |
 | :--- | :--- | :--- |
-| `Ctrl` + `Enter` | Evaluate Block | Runs the block of code your cursor is currently in. |
-| `Shift` + `Enter`| Evaluate Line | Runs the single line of code your cursor is on. |
-| `Ctrl` + `.` | Hush | Stops all sound immediately. |
-| `Cmd` + `/` | Toggle Comment | Comments or uncomments the selected line(s) of code. (Use `Ctrl` + `/` on Windows/Linux) |
-| `Alt` + `Shift`+ `F`| Format Code | Automatically formats and tidies up the code in the editor. | 
+| `Ctrl` + `Enter` | Evaluate Block | **(Most common)** Runs the block of code your cursor is currently in. A "block" is usually a group of lines separated by empty lines. |
+| `Shift` + `Enter`| Evaluate Line | **(Also common)** Runs the single line of code your cursor is on. |
+| `Ctrl` + `/` | Toggle Comment | Comments or uncomments the selected line(s) of code. |
+| `Ctrl` + `.` | Hush | Stops all sound immediately. This is a classic shortcut from TidalCycles. | 
