@@ -1,4 +1,5 @@
 # Strudel-Resources
+
 This file is a quick reference for the symbols, terms, and functions used in Strudel.
 
 ---
@@ -101,4 +102,18 @@ Functions related to playing synthesizers and notes.
 | `.s("synth_name")` | Sets the synth sound for a note pattern (`n` or `chord`). |
 | `voicing()` | Intelligently arranges the notes of a chord into a "voicing". |
 | `sine` / `saw` / etc. | Continuous signal generators, often used to modulate parameters. |
-| `.range(min, max)` | Scales a signal to a specific range. | 
+| `.range(min, max)` | Scales a signal to a specific range. |
+
+---
+
+## Keyboard Shortcuts (in the REPL)
+
+These are the default shortcuts for controlling the Strudel REPL. "Evaluate" means to run the code.
+
+| Shortcut | Action | Description |
+| :--- | :--- | :--- |
+| `Ctrl` + `Enter` | Evaluate Block | Runs the block of code your cursor is currently in. |
+| `Shift` + `Enter`| Evaluate Line | Runs the single line of code your cursor is on. |
+| `Ctrl` + `.` | Hush | Stops all sound immediately. |
+| `Cmd` + `/` | Toggle Comment | Comments or uncomments the selected line(s) of code. (Use `Ctrl` + `/` on Windows/Linux) |
+| `Alt` + `Shift`+ `F`| Format Code | Automatically formats and tidies up the code in the editor. | 
