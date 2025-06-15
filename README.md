@@ -112,7 +112,7 @@ These are the most common shortcuts for the Strudel REPL on a Linux system.
 
 | Shortcut | Action | Description |
 | :--- | :--- | :--- |
-| `Ctrl` + `Enter` | Evaluate Block | **(Most common)** Runs the block of code your cursor is currently in. A "block" is usually a group of lines separated by empty lines. |
-| `Shift` + `Enter`| Evaluate Line | **(Also common)** Runs the single line of code your cursor is on. |
+| `Ctrl` + `Enter` | Evaluate Block | Runs the block of code your cursor is currently in. A "block" is usually a group of lines separated by empty lines. |
+| `Shift` + `Enter`| Evaluate Line | Runs the single line of code your cursor is on. |
 | `Ctrl` + `/` | Toggle Comment | Comments or uncomments the selected line(s) of code. |
 | `Ctrl` + `.` | Hush | Stops all sound immediately. This is a classic shortcut from TidalCycles. | 
