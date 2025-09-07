@@ -1,0 +1,30 @@
+ $: s("gm_violin").note("[<c2 c1 a1>]").compressor("-10:20:30:.1:.02")
+
+   // s("violin").note("<g3 e3 c3>")
+  // .fast(2)
+
+// Drums Pattern 1
+$: s("[bd <hh oh>]*2").bank("tr909, tr707").dec(.7).compressor("-10:20:30:.1:.02")
+
+$: s("bd <hh bd>*4")
+  .bank("tr909, tr707").dec(.3)
+  .n("7!8"
+     .add(berlin.fast(4).mul(14))).scale("c:minor")
+  .n("3!16".add((berlin.fast(4).mul(14))).scale("e:minor"))
+  .compressor("-30:50:20:.1:.02")
+  
+
+$: s("bd sd [~ bd] sd,hh*8")
+  .compressor("-30:50:20:.1:.02")
+
+// $: s("<hh hh> bd*7")
+//  .beat("0,3,3", 7)
+//  .dec(.1).attack("<7>")
+
+
+//$: s("[bd*8] oh").amp(".1*2 .5 .1*2 .5 .1 .5").osc(7)
+
+//gm_fx_crystal
+//gm_harpsichord
+//gm_violin
+
